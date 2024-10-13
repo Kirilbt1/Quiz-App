@@ -1,0 +1,94 @@
+.bacground-ranking {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('../../public/pictures/RankingsBg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 20px;
+}
+
+.ranking-container {
+  background: rgba(0, 0, 0, 0.7); 
+  padding: 30px;
+  width: 85%;  
+  max-width: 800px; 
+  color: black;
+  border-radius: 12px;
+  background-color: #F7F3F0;
+  margin: 0 auto; 
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.quiz-list ul, .ranking-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+}
+
+.quiz-list li, .ranking-list li {
+  background-color: rgba(255, 255, 255, 0.1); 
+  color: black;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+
+  /* Add border */
+  border: 2px solid rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+  
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* On hover, change border color for interactivity */
+.quiz-list li:hover, .ranking-list li:hover {
+  border-color: rgba(0, 0, 0, 0.8); /* Darker border on hover */
+}
+
+.ranking-list {
+  margin-top: 20px; 
+}
+
+.ranking-list li {
+
+  margin-bottom: 10px; 
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .ranking-container {
+    padding: 20px;
+    width: 90%;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  .quiz-list li, .ranking-list li {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}

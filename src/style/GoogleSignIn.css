@@ -1,0 +1,129 @@
+/* Background hero section */
+.hero-section {
+  background-image: url('../../public/pictures/SignIn.jpg'); 
+  height: 93vh; 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; 
+  position: relative;
+
+}
+
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+
+.how-it-works {
+  padding: 40px 20px;
+ 
+ border-radius: 10px;
+ background-color: #F7F3F0;
+}
+.howWP{
+  font-size: 20px;
+  font-weight: bold;
+}
+.text-objasnuvanje{
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.how-it-works-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  background-color: #F7F3F0;
+
+  
+}
+
+.how-it-works-img {
+  flex: 1;
+  max-width: 45%; /* Adjust size of the image */
+  margin-right: 20px;
+  border-radius: 5px;
+  height: 40vh;
+}
+
+.how-it-works-text {
+  flex: 1;
+  max-width: 55%; /* Adjust width of text block */
+  text-align: left;
+}
+
+
+.how-it-works-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: left;
+}
+
+.how-it-works-text p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+
+.google-sign-in-btn {
+  background-color: #73C2AD;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  width: 250px;
+}
+
+.google-sign-in-btn:hover {
+  background-color: #C1D671;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .how-it-works-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .how-it-works-img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .how-it-works-text h2 {
+    font-size: 2rem;
+  }
+}

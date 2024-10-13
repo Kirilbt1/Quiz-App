@@ -1,0 +1,160 @@
+/* Style for the background container */
+.background {
+  background-image: url('../../public/pictures/SignIn.jpg'); /* Path to your background image */
+  height: 93vh; /* Full viewport height */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  display: flex; /* Flexbox for centering content */
+  align-items: center; /* Vertically center */
+  justify-content: center; /* Horizontally center */
+  position: relative; /* For positioning pseudo-elements */
+}
+
+/* Adding an overlay to the background for better text readability */
+
+
+/* Ensure the quiz-container is positioned above the overlay */
+.quiz-container {
+  max-width: 800px;
+  width: 100%; /* Full width within its container */
+  padding: 20px;
+  background-color: #f7f7f7; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for better separation */
+  border-radius: 8px;
+  position: relative; /* Ensures it appears above the overlay */
+  z-index: 2; /* Ensure it appears above the background overlay */
+  background-color: #F7F3F0;
+}
+
+/* Style for headers */
+h1, h3, h4 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style for question cards */
+.question-card {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  /* background-color: #fff; */
+  background-color: #F7F3F0;
+}
+
+/* Style for question text */
+.question-card p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style for text input */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Style for labels */
+label {
+  display: block;
+  margin: 8px 0;
+}
+
+/* Style for radio and checkbox inputs */
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Style for buttons */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+ background-color: #73C2AD;
+}
+
+button:hover {
+ background-color: #C1D671;
+}
+
+/* Style for loading text */
+.loading {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Style for password protection section */
+.password-protect {
+  text-align: center;
+  position: relative;
+  z-index: 2; /* Ensure it appears above the background overlay */
+  padding: 30px;
+  background-color: #F7F3F0;
+}
+
+.password-protect h5 {
+  margin-bottom: 20px;
+}
+
+/* Style for password input */
+.password-protect input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.background-protected{
+  background-image: url('../../public/pictures/SignIn.jpg'); /* Path to your background image */
+  height: 93vh; /* Full viewport height */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  display: flex; /* Flexbox for centering content */
+  align-items: center; /* Vertically center */
+  justify-content: center; /* Horizontally center */
+  position: relative; /* For positioning pseudo-elements */
+}
+/* Style for error messages */
+.error {
+  color: red;
+  text-align: center;
+}
+
+/* Style for created by text */
+.created-by {
+  margin: 10px 0;
+  font-style: italic;
+}
+
+/* Style for difficulty text */
+.difficulty {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+  .quiz-container {
+    padding: 10px;
+  }
+
+  .question-card {
+    padding: 10px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
